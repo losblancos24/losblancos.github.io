@@ -1,0 +1,32 @@
+{#**
+ * Copyright ETS Software Technology Co., Ltd
+ *
+ * NOTICE OF LICENSE
+ *
+ * This file is not open source! Each license that you purchased is only available for 1 website only.
+ * If you want to use this file on more websites (or projects), you need to purchase additional licenses.
+ * You are not allowed to redistribute, resell, lease, license, sub-license or offer our resources to any third party.
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade PrestaShop to newer
+ * versions in the future.
+ *
+ * @author ETS Software Technology Co., Ltd
+ * @copyright  ETS Software Technology Co., Ltd
+ * @license    Valid for 1 website (or project) for each purchase of license
+ *#}
+{%if action.options.submit_route=='admin_order_bulk_delete'%}
+    {%if ets_omd_is_viewtrash%}
+        {%if ets_odm_can_delete_order%}
+            <button id="order_grid_bulk_action_delete_selected" class="dropdown-item js-bulk-action-submit-btn" type="button" data-form-url="{{ets_odm_link_list_orders}}&delete_all_order=1&viewtrash=1" data-form-method="POST" data-confirm-message=""> {{Delete_selected_orders_text}} </button>
+        {%endif%}
+        <button id="order_grid_bulk_action_restore_selected" class="dropdown-item js-bulk-action-submit-btn" type="button" data-form-url="{{ets_odm_link_list_orders}}&restore_all_order=1&viewtrash=1" data-form-method="POST" data-confirm-message=""> {{Restore_selected_orders_text}} </button>
+    {%else%}
+        {%if ets_odm_can_delete_order%}
+            <button id="order_grid_bulk_action_delete_selected" class="dropdown-item js-bulk-action-submit-btn" type="button" data-form-url="{{ets_odm_link_list_orders}}&delete_all_order" data-form-method="POST" data-confirm-message=""> {{Delete_selected_orders_text}} </button>
+        {%endif%}
+    {%endif%}
+{%else%}
+    {% include constant('_PS_VERSION_')|number_format >= 8  ? '@!PrestaShop/Admin/Common/Grid/Actions/Bulk/submit.html.twig': 'PrestaShopBundle:Admin/Common/Grid/Actions/Bulk:submit.html.twig' %}
+{%endif%}

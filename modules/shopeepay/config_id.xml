@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+    <name>shopeepay</name>
+    <displayName><![CDATA[QRIS by ShopeePay]]></displayName>
+    <version><![CDATA[2.1.4]]></version>
+    <description><![CDATA[Accept payments for your products via Duitku.]]></description>
+    <author><![CDATA[Kharisma Catur Mandala]]></author>
+    <tab><![CDATA[payments_gateways]]></tab>
+	<confirmUninstall><![CDATA[Are you sure about removing these details?]]></confirmUninstall>
+    <is_configurable>1</is_configurable>
+    <need_instance>1</need_instance>
+</module>

@@ -1,0 +1,119 @@
+nav.header-nav{
+    background: #173980;
+ 
+}
+#header .header-top a[data-depth="0"] {
+    color:#173980;
+    text-transform: uppercase;
+    
+}
+.popover {
+background-color:#173980;
+left:unset;
+
+} 
+.top-menu .sub-menu {
+        z-index: 18;
+           width: calc(20% - 30px);
+    min-width: calc(20% - 30px);
+    
+}
+.block_myaccount_infos .myaccount-title a, #header a, #wrapper .breadcrumb li a, .block-contact .navbar-toggler .material-icons, .linklist .blockcms-title a {
+    color: #d2d2d2;
+}
+.block-social ul li {
+   
+    background-color: #173980;
+  
+}
+
+    
+    .btn-primary,.btn-primary:hover {
+        color: #ffffff;
+        background-color: #173980;
+        border-color: transparent
+}
+#wrapper .breadcrumb li:last-child {
+    color: #d2d2d2;
+ 
+}
+
+#header {
+    color: #d2d2d2;
+    
+}
+#search_filters>.h6{
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+.block-categories .h6 {
+    font-size: 1.22rem;
+    font-weight: 700;
+}
+.block-category .block-category-inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-around;
+    align-content: space-between;
+    flex-wrap: nowrap;
+    flex-direction: row-reverse;
+    align-items: baseline;
+}
+
+h2{
+   
+    line-height: 2.1;
+}
+.h2, h2 {
+    font-size: 1.3125rem;
+    text-align: center;
+}
+#subcategories ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: 0 0 0 -10px;
+    justify-content: space-around;
+    align-content: flex-start;
+}
+p {
+    font-size: 1.1175rem;
+    font-weight: 400;
+    color: #000000;
+    line-height: 8rem;
+}
+.block-category .block-category-inner #category-description p:first-child {
+    margin-bottom: -0.75rem;
+}
+.block_newsletter #block-newsletter-label {
+    line-height: 1.3rem;
+}
+.block-contact, .footer-container li a {
+    font-size: 0.6999rem;
+    color: #000000;
+}
+.blockreassurance {
+    padding-top: 35px;
+    text-align: center;
+    width: 100%;
+}
+#pagenotfound .page-not-found, #products .page-not-found {
+    max-width: 605px;
+    padding: 1rem;
+    margin: 0 auto;
+    overflow: auto;
+    font-size: .875rem;
+    color: #7a7a7a;
+    background: #fff;
+}
+#header .header-top {
+    padding: -1.75rem 0;
+}
+.dropdown .expand-more {
+    color: #d2d2d2;
+}
